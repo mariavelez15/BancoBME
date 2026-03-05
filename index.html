@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BME - Banco de la Mujer Empoderada</title>
+    <link rel="stylesheet" href="bme.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    📞 Línea Mujer: 1-800-BME-MUJER (1-800-263-6853)
+                </div>
+                <div class="top-links">
+                    <a href="#sucursales">Sucursales</a>
+                    <a href="#cajeros">Cajeros</a>
+                    <a href="#ayuda">Centro de Ayuda</a>
+                    <a href="#accesibilidad">Accesibilidad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER PRINCIPAL -->
+    <header class="main-header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">BME</div>
+                    <div class="logo-text">
+                        <h1>BANCO DE LA MUJER</h1>
+                        <span>Empoderada</span>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+
+                <nav>
+                    <ul class="main-nav" id="mainNav">
+                        <li>
+                            <a href="#productos">Productos ▼</a>
+                            <div class="dropdown">
+                                <a href="#cuentas">💜 Cuentas Mujer</a>
+                                <a href="#prestamos">💰 Préstamos Empoderadas</a>
+                                <a href="#tarjetas">💳 Tarjetas Sin Límites</a>
+                                <a href="#ahorro">🏦 Plan Ahorro Futuro</a>
+                                <a href="#inversion">📈 Inversiones Mujer</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#servicios">Servicios ▼</a>
+                            <div class="dropdown">
+                                <a href="#banca-digital">📱 Banca Digital Mujer</a>
+                                <a href="#pagos">💸 Pagos y Transferencias</a>
+                                <a href="#seguros">🛡️ Seguros Mujer Protegida</a>
+                                <a href="#remesas">🌎 Remesas Internacionales</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#empresas">Empresarias ▼</a>
+                            <div class="dropdown">
+                                <a href="#pyme">🏢 Pyme Mujer</a>
+                                <a href="#emprendedoras">🚀 Programa Emprendedoras</a>
+                                <a href="#comercio">🛒 Comercio Exterior</a>
+                                <a href="#consultoria">📋 Consultoría Financiera</a>
+                            </div>
+                        </li>
+                        <li><a href="#educacion">Educación Financiera</a></li>
+                        <li><a href="#nosotros">Nosotras</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#acceso" class="btn btn-outline">Banca en Línea</a>
+                    <a href="#abrir" class="btn btn-primary">Abrir Cuenta</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate">
+                <h2>Tu Fortaleza Financiera</h2>
+                <p>El primer banco diseñado por y para mujeres. Impulsamos tu independencia económica con productos que entienden tus necesidades y sueños.</p>
+                <a href="#conocer" class="btn btn-primary" style="font-size: 1.1em; padding: 15px 40px;">Descubre tu Potencial</a>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Mujeres Empoderadas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">$2.5M</span>
+                        <span class="stat-label">En Préstamos Otorgados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfacción Cliente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="products-section" id="productos">
+        <div class="container">
+            <div class="section-header">
+                <h3>Productos Diseñados para Ti</h3>
+                <p>Soluciones financieras que se adaptan a cada etapa de tu vida</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <span class="product-badge">MÁS POPULAR</span>
+                    <div class="product-image">💜</div>
+                    <div class="product-content">
+                        <h4>Cuenta Mujer Independiente</h4>
+                        <p>Cuenta corriente sin comisiones mensuales diseñada para la mujer moderna.</p>
+                        <ul class="product-features">
+                            <li>Sin costo de manejo mensual</li>
+                            <li>Transferencias ilimitadas gratis</li>
+                            <li>Descuentos en farmacias y belleza</li>
+                            <li>Seguro de protección incluido</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Solicitar Ahora</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">💳</div>
+                    <div class="product-content">
+                        <h4>Tarjeta Oro Mujer</h4>
+                        <p>Tarjeta de crédito con beneficios exclusivos en educación, salud y bienestar.</p>
+                        <ul class="product-features">
+                            <li>Hasta 45 días de gracia</li>
+                            <li>Cashback 5% en supermercados</li>
+                            <li>2x1 en cines y eventos culturales</li>
+                            <li>Asistencia médica telefónica 24/7</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <span class="product-badge">NUEVO</span>
+                    <div class="product-image">🏠</div>
+                    <div class="product-content">
+                        <h4>Préstamo Hogar Propia</h4>
+                        <p>Financiamiento hipotecario con tasas preferenciales para mujeres solteras o jefas de hogar.</p>
+                        <ul class="product-features">
+                            <li>Tasa desde 8.5% anual fija</li>
+                            <li>Hasta 90% de financiamiento</li>
+                            <li>Plazo hasta 25 años</li>
+                            <li>Asesoría legal gratuita</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Simular Cuota</a>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">🚀</div>
+                    <div class="product-content">
+                        <h4>Crédito Emprendedora</h4>
+                        <p>Capital semilla para mujeres que sueñan con su propio negocio.</p>
+                        <ul class="product-features">
+                            <li>Desde $500 hasta $50,000</li>
+                            <li>Aprobación en 48 horas</li>
+                            <li>6 meses de gracia en pagos</li>
+                            <li>Capacitación empresarial incluida</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Aplicar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN BANCA DIGITAL -->
+    <section class="digital-section" id="servicios">
+        <div class="container">
+            <div class="digital-grid">
+                <div class="digital-content">
+                    <h3>Tu Banco en tus Manos</h3>
+                    <p>La Banca Digital Mujer te permite gestionar tus finanzas desde cualquier lugar, en cualquier momento. Diseñada con la seguridad y facilidad que necesitas.</p>
+                    <p>Con nuestra app exclusiva puedes:</p>
+                    <ul style="margin: 20px 0; padding-left: 20px; color: #555;">
+                        <li style="margin-bottom: 10px;">Transferir fondos instantáneamente entre cuentas BME</li>
+                        <li style="margin-bottom: 10px;">Pagar servicios y hacer recargas sin costo</li>
+                        <li style="margin-bottom: 10px;">Bloquear/desbloquear tarjetas en tiempo real</li>
+                        <li style="margin-bottom: 10px;">Acceder a tu historial de gastos categorizado</li>
+                        <li style="margin-bottom: 10px;">Solicitar préstamos pre-aprobados en 3 clicks</li>
+                    </ul>
+                    <div style="margin-top: 30px;">
+                        <a href="#" class="btn btn-primary">Descargar App</a>
+                        <a href="#" class="btn btn-outline" style="margin-left: 10px;">Ver Demo</a>
+                    </div>
+                </div>
+                
+                <div class="app-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="icon-app">BME</div>
+                            <h4 style="font-size: 1.2em;">Banca Móvil</h4>
+                            <p style="font-size: 0.9em; opacity: 0.9;">Tu dinero seguro,<br>siempre contigo</p>
+                            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                                <span style="width: 10px; height: 10px; background: white; border-radius: 50%; opacity: 0.5;"></span>
+                                <span style="width: 10px; height: 10px; background: white; border-radius: 50%;"></span>
+                                <span style="width: 10px; height: 10px; background: white; border-radius: 50%; opacity: 0.5;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px; color: #666; font-size: 0.9em;">Disponible para iOS y Android</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h3>Historias de Éxito</h3>
+                <p>Mujeres que transformaron sus vidas con BME</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Gracias al Crédito Emprendedora pude abrir mi pastelería. El proceso fue rápido y me dieron asesoría de negocios que fue clave para mi éxito."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h5>María Rodríguez</h5>
+                            <span>Dueña de Dulces Sueños, Santo Domingo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"La Cuenta Mujer Independiente me permite administrar mis finanzas sin preocuparme por comisiones. El app es súper intuitivo y seguro."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LP</div>
+                        <div class="author-info">
+                            <h5>Laura Pérez</h5>
+                            <span>Profesional Independiente, Santiago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Con el Préstamo Hogar Propia logré comprar mi apartamento siendo madre soltera. Las condiciones fueron mejores que en cualquier otro banco."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CG</div>
+                        <div class="author-info">
+                            <h5>Carmen Gómez</h5>
+                            <span>Docente, La Romana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Cuentas de Ahorro</a></li>
+                        <li><a href="#">Cuentas Corrientes</a></li>
+                        <li><a href="#">Tarjetas de Crédito</a></li>
+                        <li><a href="#">Préstamos Personales</a></li>
+                        <li><a href="#">Hipotecas</a></li>
+                        <li><a href="#">Inversiones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Banca en Línea</a></li>
+                        <li><a href="#">App Móvil BME</a></li>
+                        <li><a href="#">Pago de Servicios</a></li>
+                        <li><a href="#">Transferencias Internacionales</a></li>
+                        <li><a href="#">Seguros</a></li>
+                        <li><a href="#">Asesoría Financiera</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Sobre BME</h4>
+                    <ul>
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">Misión y Visión</a></li>
+                        <li><a href="#">Responsabilidad Social</a></li>
+                        <li><a href="#">Fundación Mujer Empoderada</a></li>
+                        <li><a href="#">Trabaja con Nosotras</a></li>
+                        <li><a href="#">Prensa y Medios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="#">📞 1-800-BME-MUJER</a></li>
+                        <li><a href="#">✉️ ayuda@bme.com.do</a></li>
+                        <li><a href="#">💬 Chat en Vivo 24/7</a></li>
+                        <li><a href="#">📍 Encuentra tu Sucursal</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                        <a href="#">ig</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Banco de la Mujer Empoderada (BME). Todos los derechos reservados. | <a href="#" style="color: #aaa;">Términos de Uso</a> | <a href="#" style="color: #aaa;">Política de Privacidad</a> | <a href="#" style="color: #aaa;">Seguridad</a></p>
+                <p style="margin-top: 10px; font-size: 0.85em;">BME es una institución financiera regulada por la Superintendencia de Bancos de la República Dominicana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+
+        // Animación suave al scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
